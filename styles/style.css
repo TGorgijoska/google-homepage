@@ -1,0 +1,132 @@
+*, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ============= NAV-BAR   */
+.nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center ;
+    margin: 12px 5px;
+}
+.nav-element-group{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+.nav-element {
+    margin: 0 9px;
+    font-size: 0.8em;
+}
+.nav-element > a {
+    text-decoration: none;
+    color: #3c4043;
+} 
+.nav-element > img{
+    border-radius: 20px;
+}
+.hover:hover {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+}
+
+/* ============= MAIN   */
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 80vh;
+    width: 100vw;
+}
+.logo{
+    padding: 5px;
+}
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    margin: 17px;
+    padding: 10px 10px;
+    border:1px solid #dfe1e5;
+    border-radius: 30px;
+}
+.searchbar > input{
+    width:480px;
+    border: none;
+    margin: 0 5px;
+}
+.searchbar:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
+.icon {
+    height: 24px;
+    width: 24px;
+    margin: 0 5px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    color: #3c4043;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    font-size: 0.9em;
+}
+.btn:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+    cursor: pointer;
+}
+.lang{
+    font-size: 0.8em;
+    margin: 20px;
+}
+.lang-link{
+    text-decoration: none;
+    margin: 0 2px;
+}
+
+
+/* ============== FOOTER    */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    color: rgba(0,0,0,.54);
+    background-color: #f2f2f2;
+    font-size: 0.95em;
+    padding: 0px 0;
+}
+.footer-elements{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid #dadce0;
+}
+.footer-el-group{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-link, .footer-el{
+    padding: 5px 15px;
+}
+.footer-link > a{
+    color: rgba(0,0,0,.54);
+    text-decoration: none;
+}a:hover{
+    text-decoration: underline;
+}
